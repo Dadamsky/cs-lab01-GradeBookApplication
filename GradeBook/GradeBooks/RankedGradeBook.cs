@@ -11,7 +11,7 @@ namespace GradeBook.GradeBooks
         public RankedGradeBook(string name) : base(name) 
         {
 
-            Type = Enums.GradeBookType.Standard;
+            Type = Enums.GradeBookType.Ranked;
 
         }
 
@@ -36,7 +36,6 @@ namespace GradeBook.GradeBooks
 
             return 'F';
         }
-
         public override void CalculateStatistics()
         {
             if (Students.Count() < 5)
@@ -47,5 +46,6 @@ namespace GradeBook.GradeBooks
 
             base.CalculateStatistics();
         }
+
     }
 }
